@@ -1,0 +1,394 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(124, 11, 11);
+    margin: 0%;
+    font-family: Arial;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(124, 11, 11) ;
+    margin-top: 1rem;
+}
+
+.Menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(124, 11, 11) ;
+    width: 100%;
+    height: 100%;
+    max-height:3rem;
+    margin-top: 2rem;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.Menu nav{
+    width: 100%;
+    max-width: 42rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border:solid;
+    border-width: 0.05rem 0rem;
+    border-color: white;
+}
+
+.Menu ul{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    list-style: none;
+    background-color:rgb(124, 11, 11) ;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0%;
+    margin: 0%;
+}
+
+.Menu a{
+    display: block;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.Menu li{
+    border-radius: 2rem;
+}
+
+.Menu li a{
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+.Menu li a:hover{
+    background-color: rgb(94, 13, 13);
+    border-radius: 2rem;
+}
+
+.Menu li a.ativo{
+    text-decoration: underline;
+}
+
+.Container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(124, 11, 11) ;
+    height: 100%;
+    margin-top:1rem;
+    
+}
+.Container2{
+    background-color: rgb(124, 11, 11);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+   
+}
+
+.Linha{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    max-width: 45rem;
+    width: 100%;
+}
+
+.Linha h1{
+    color:white;
+    margin: 1rem;
+    font-family: Arial;
+}
+
+.Previa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap:1rem;
+    padding: 1rem;
+}
+
+.Produto{
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-radius: 1rem;
+    border-width: 0.05rem;
+    text-align: center;
+    background-color: rgb(124, 11, 11);
+    color: white;
+    
+}
+
+.Produto img{
+    border-radius: 1rem 1rem 0rem 0rem  ;
+    width: 11rem;
+    height: 9rem;
+     
+}
+
+.Produto a{
+    text-decoration: none;
+    color: white;
+}
+
+.Produto p{
+    max-width: 10rem;
+}
+
+.Produto:hover{
+    background-color:rgb(94, 13, 13);
+    border-radius: 1rem;
+}
+
+.Btn{
+    display: flex;
+    justify-content:flex-end;
+}
+
+.Btn a{
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: solid 0.01rem;
+    color: white;
+    background-color:rgb(124, 11, 11);
+}
+
+.Btn a:hover{
+    background-color:rgb(94, 13, 13);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    bottom:0%;
+    left: 0%;
+    background-color: rgb(124, 11, 11);
+    width: 100%;
+    border: solid;
+    border-width: 0.1rem 0rem;
+    margin-top:1rem ;
+}
+
+/*     Receitas         */
+
+.Btn-voltar{
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+    align-self: center;
+    align-items: center;
+    max-height: 2.5rem;
+}
+
+.Btn-voltar a{
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: solid 0.01rem;
+    color: white;
+    background-color:rgb(124, 11, 11);
+}
+
+.Btn-voltar a:hover{
+    background-color:rgb(94, 13, 13);
+}
+
+.ContainerReceitas{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.ContainerReceitas ul.Utensilios{
+        display: flex;
+
+}
+
+.ContainerReceitas li.imgUtensilios{
+    width: 10rem;
+    height: 7rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.ContainerReceitas img{
+    width: 100%;
+    height: 100%;
+}
+
+.Utensilios ul{
+    list-style:none;
+    max-width: 38rem;
+
+}
+
+.Mododepreparo ul{
+    list-style:decimal;
+    max-width: 40rem;
+
+}
+
+.atencao{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    list-style: none;
+    color:yellow;
+}
+
+.aviso{
+    margin-top: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    position: absolute;
+    pointer-events: none;
+
+}
+
+.aviso img{
+    width: 40rem;
+    height: 20rem;
+    border-radius: 1rem;
+}
+
+
+
+@media (max-width: 768px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5rem;
+        font-size:1.5rem;
+    }
+    .Menu nav{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .Menu ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:0rem;
+    }
+    .Menu li a{
+        display: flex;
+        padding:0.5rem;
+        justify-content: center;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Container1{
+        margin-top: 5rem;
+    }
+    .Linha{
+        justify-content: center;
+    }
+    .Previa{
+        justify-content: center;
+    }
+    .Produto{
+        width: 9rem;
+        height: 11rem;
+    }
+    .Produto img{
+        width: 9rem;
+        height: 8rem;
+
+    }
+
+    .Produto p{
+        margin: 0%;
+    }
+    .Btn{
+        display: flex;
+        justify-content: center;
+    }
+    .Btn button{
+        width:100%;
+        height: 3rem;
+    }
+
+    /*Receitas*/
+
+    .Btn-voltar{
+        align-self: flex-start;
+        text-align: center;
+        font-size: 1.3rem;
+        margin: 5rem 0rem 0rem 1rem; 
+    }
+
+    .Btn-voltar a{
+        width: 5rem;
+        height: 1.5rem;
+    }
+
+    .ContainerReceitas{
+
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .Receitas{
+        width:100%;
+    }  
+
+    .Ingredientes{
+        width:100%;
+    }
+    .Utensilios{
+        width:100%;
+
+    }
+    .ContainerReceitas li.imgUtensilios{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    padding-bottom: 1rem;
+    }
+
+    .ContainerReceitas ul{
+        margin: 0%;
+        padding: 0%;
+
+    }
+    .aviso img{
+    width: 20rem;
+    height: 13rem;
+    border-radius: 1rem;
+}
+
+}
+
